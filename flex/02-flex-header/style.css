@@ -1,6 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  justify-content: space-around;
+}
+
+.left-links > ul,
+.right-links > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+ul {
+  gap: 8px;
+}
+
+ul > li {
+  align-self: center;
 }
 
 .logo {
